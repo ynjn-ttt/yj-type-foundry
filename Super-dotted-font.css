@@ -1,0 +1,144 @@
+*{
+  margin-block-start: 0;
+  margin-block-end:0;
+  margin-inline-start: 0;
+  margin-inline-end:0;
+}
+
+@font-face {
+  font-family: superdottedfont;
+  src:url(fonts/yjfont4-webfont.woff);
+
+}
+
+
+body {
+  font-family: monospace;
+  background-color: #eaffe6;
+  padding-bottom: 200px;
+}
+
+nav ul{
+  list-style-type:none;
+  padding-inline-start:0;
+}
+
+#navigation ul li {
+  list-style-type: none;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  margin:auto;
+  background-color: #f1e6ff;
+}
+
+h1 {
+  font-family: superdottedfont;
+  font-size: 100px;
+  font-weight: normal;
+  text-align: center;
+}
+
+ h2 {
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+p, h2, nav{
+  padding:20px;
+  font-size: 20px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:2px;
+}
+
+figure.type-tester-input {
+  background-color: transparent;
+  border: 4px dotted #f1e6ff;
+  border-radius: 10px;
+  margin:20px;
+}
+figure.type-tester-input:hover{
+  background-color: transparent;
+}
+
+figure.type-tester-input:hover h1{
+  color: grey;
+}
+
+figure{
+  padding:10px;
+  background-color: #f1e6ff;
+  color:#738cff;
+  border-radius: 10px;
+  margin: 6px;
+}
+
+figure:hover{
+  background-color: #bdffdb;
+
+}
+
+figure:hover h1{
+  color: #fdffbf;
+}
+
+figcaption{
+  visibility: hidden;
+}
+
+figure:hover figcaption{
+  visibility: visible;
+}
+
+img{
+  width:20%
+}
+
+nav{
+
+}
+
+ul{
+
+}
+
+li{
+
+}
+
+
+a:link{
+    color: #738cff;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: #78ff0a;
+}
+a:active{
+    color: black;
+}
+
+@media screen and (max-width:900px){
+
+  .gird-container{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media screen and (max-width:700px){
+
+  .gird-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width:500px){
+
+  .gird-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
